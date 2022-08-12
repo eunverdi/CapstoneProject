@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  CapstoneProject
+
+  Created by Ensar Batuhan Ünverdi on 26.07.2022.
+  
+*/
+
+"Release Date" = "Release Date";
+"Movies" = "Movies";
+"Favourites" = "Favourites";
+"Search" = "Search";
+"Search for a Movie" = "Search for a Movie";
+"Original Language" = "Original Language";
+"Budget" = "Budget";
+"Revenue" = "Revenue";
+"Runtime" = "Runtime";
+"minutes" = "minutes";
+"Company" = "Company";
+"Cast" = "Cast";
+"Recommendation" = "Recommendation";
+"Homepage" = "Homepage";
