@@ -46,7 +46,7 @@
 /* Begin PBXFileReference section */
 		4719E7D12891A04900863787 /* CastListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastListCell.swift; sourceTree = "<group>"; };
 		4719E7D22891A04900863787 /* CastListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastListCell.xib; sourceTree = "<group>"; };
-		4725F4A3288EBEA1008AB6B5 /* MovieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4725F4A3288EBEA1008AB6B5 /* CapstoneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstoneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4725F4A6288EBEA1008AB6B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4725F4A8288EBEA1008AB6B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4725F4AD288EBEA1008AB6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 		4725F4A4288EBEA1008AB6B5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4725F4A3288EBEA1008AB6B5 /* MovieApp.app */,
+				4725F4A3288EBEA1008AB6B5 /* CapstoneProject.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -352,9 +352,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4725F4A2288EBEA1008AB6B5 /* MovieApp */ = {
+		4725F4A2288EBEA1008AB6B5 /* CapstoneProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4725F4BA288EBEA3008AB6B5 /* Build configuration list for PBXNativeTarget "MovieApp" */;
+			buildConfigurationList = 4725F4BA288EBEA3008AB6B5 /* Build configuration list for PBXNativeTarget "CapstoneProject" */;
 			buildPhases = (
 				2393F7F8752A30944D25FAB1 /* [CP] Check Pods Manifest.lock */,
 				4725F49F288EBEA1008AB6B5 /* Sources */,
@@ -366,9 +366,9 @@
 			);
 			dependencies = (
 			);
-			name = MovieApp;
+			name = CapstoneProject;
 			productName = CapstoneProject;
-			productReference = 4725F4A3288EBEA1008AB6B5 /* MovieApp.app */;
+			productReference = 4725F4A3288EBEA1008AB6B5 /* CapstoneProject.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -386,7 +386,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4725F49E288EBEA1008AB6B5 /* Build configuration list for PBXProject "MovieApp" */;
+			buildConfigurationList = 4725F49E288EBEA1008AB6B5 /* Build configuration list for PBXProject "CapstoneProject" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -400,7 +400,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4725F4A2288EBEA1008AB6B5 /* MovieApp */,
+				4725F4A2288EBEA1008AB6B5 /* CapstoneProject */,
 			);
 		};
 /* End PBXProject section */
@@ -706,7 +706,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4725F49E288EBEA1008AB6B5 /* Build configuration list for PBXProject "MovieApp" */ = {
+		4725F49E288EBEA1008AB6B5 /* Build configuration list for PBXProject "CapstoneProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4725F4B8288EBEA3008AB6B5 /* Debug */,
@@ -715,7 +715,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4725F4BA288EBEA3008AB6B5 /* Build configuration list for PBXNativeTarget "MovieApp" */ = {
+		4725F4BA288EBEA3008AB6B5 /* Build configuration list for PBXNativeTarget "CapstoneProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4725F4BB288EBEA3008AB6B5 /* Debug */,
