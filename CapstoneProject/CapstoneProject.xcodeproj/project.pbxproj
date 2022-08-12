@@ -37,6 +37,8 @@
 		4788AD73289138FF0045BF6C /* Formatter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4788AD72289138FF0045BF6C /* Formatter+Extension.swift */; };
 		4789528C289E5FF000586B2C /* FavouriteMovie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4789528A289E5FF000586B2C /* FavouriteMovie.xcdatamodeld */; };
 		4789528E289E647300586B2C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4789528D289E647300586B2C /* CoreDataManager.swift */; };
+		47C1C26328A63C9D002EC991 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 47C1C26228A63C9D002EC991 /* SDWebImage */; };
+		47C1C26528A63C9D002EC991 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 47C1C26428A63C9D002EC991 /* SDWebImageMapKit */; };
 		47D59BB128926C84006DC9E8 /* CastModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D59BB028926C84006DC9E8 /* CastModel.swift */; };
 		47D59BB4289275BE006DC9E8 /* RecommendationListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D59BB2289275BE006DC9E8 /* RecommendationListCell.swift */; };
 		47D59BB5289275BE006DC9E8 /* RecommendationListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 47D59BB3289275BE006DC9E8 /* RecommendationListCell.xib */; };
@@ -90,6 +92,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47C1C26328A63C9D002EC991 /* SDWebImage in Frameworks */,
+				47C1C26528A63C9D002EC991 /* SDWebImageMapKit in Frameworks */,
 				4C8FC4061AC84D01EC005EE6 /* Pods_CapstoneProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,13 +364,16 @@
 				4725F49F288EBEA1008AB6B5 /* Sources */,
 				4725F4A0288EBEA1008AB6B5 /* Frameworks */,
 				4725F4A1288EBEA1008AB6B5 /* Resources */,
-				D6EF887EEA08112EBC3F89E9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CapstoneProject;
+			packageProductDependencies = (
+				47C1C26228A63C9D002EC991 /* SDWebImage */,
+				47C1C26428A63C9D002EC991 /* SDWebImageMapKit */,
+			);
 			productName = CapstoneProject;
 			productReference = 4725F4A3288EBEA1008AB6B5 /* CapstoneProject.app */;
 			productType = "com.apple.product-type.application";
@@ -396,6 +403,9 @@
 				tr,
 			);
 			mainGroup = 4725F49A288EBEA1008AB6B5;
+			packageReferences = (
+				47C1C26128A63C9D002EC991 /* XCRemoteSwiftPackageReference "SDWebImage.git" */,
+			);
 			productRefGroup = 4725F4A4288EBEA1008AB6B5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -443,23 +453,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D6EF887EEA08112EBC3F89E9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -725,6 +718,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47C1C26128A63C9D002EC991 /* XCRemoteSwiftPackageReference "SDWebImage.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47C1C26228A63C9D002EC991 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C1C26128A63C9D002EC991 /* XCRemoteSwiftPackageReference "SDWebImage.git" */;
+			productName = SDWebImage;
+		};
+		47C1C26428A63C9D002EC991 /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47C1C26128A63C9D002EC991 /* XCRemoteSwiftPackageReference "SDWebImage.git" */;
+			productName = SDWebImageMapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4789528A289E5FF000586B2C /* FavouriteMovie.xcdatamodeld */ = {
