@@ -28,7 +28,6 @@
 		4725F4DF288ECDD4008AB6B5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F4DE288ECDD4008AB6B5 /* SearchViewController.swift */; };
 		4725F4E5288FDC84008AB6B5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4725F4E4288FDC84008AB6B5 /* String+Extension.swift */; };
 		473889A528A3C0E500B73342 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473889A428A3C0E500B73342 /* MainTabBarViewController.swift */; };
-		473889AB28A3D01300B73342 /* TabBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473889AA28A3D01300B73342 /* TabBar+Extension.swift */; };
 		474DDAA0289E671F00654115 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474DDA9F289E671F00654115 /* CoreDataStack.swift */; };
 		477A3E9028928249002A3FDF /* CastResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477A3E8F28928249002A3FDF /* CastResults.swift */; };
 		477A3E922893D9B8002A3FDF /* CastDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477A3E912893D9B8002A3FDF /* CastDetailsModel.swift */; };
@@ -69,7 +68,6 @@
 		4725F4DE288ECDD4008AB6B5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		4725F4E4288FDC84008AB6B5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		473889A428A3C0E500B73342 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
-		473889AA28A3D01300B73342 /* TabBar+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TabBar+Extension.swift"; sourceTree = "<group>"; };
 		474DDA9F289E671F00654115 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		477A3E8F28928249002A3FDF /* CastResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastResults.swift; sourceTree = "<group>"; };
 		477A3E912893D9B8002A3FDF /* CastDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastDetailsModel.swift; sourceTree = "<group>"; };
@@ -178,7 +176,6 @@
 				473889AF28A3D13A00B73342 /* String+Extension */,
 				473889AE28A3D13100B73342 /* UIView+Extension */,
 				473889AD28A3D12500B73342 /* UIViewController+Extension */,
-				473889AC28A3D11100B73342 /* TabBar+Extension */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -190,14 +187,6 @@
 				477A3E9B28993F90002A3FDF /* MovieModels */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		473889AC28A3D11100B73342 /* TabBar+Extension */ = {
-			isa = PBXGroup;
-			children = (
-				473889AA28A3D01300B73342 /* TabBar+Extension.swift */,
-			);
-			path = "TabBar+Extension";
 			sourceTree = "<group>";
 		};
 		473889AD28A3D12500B73342 /* UIViewController+Extension */ = {
@@ -364,6 +353,7 @@
 				4725F49F288EBEA1008AB6B5 /* Sources */,
 				4725F4A0288EBEA1008AB6B5 /* Frameworks */,
 				4725F4A1288EBEA1008AB6B5 /* Resources */,
+				322D31D2385CE90DEC7DC1A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -455,6 +445,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		322D31D2385CE90DEC7DC1A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CapstoneProject/Pods-CapstoneProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -483,7 +490,6 @@
 				477A3E922893D9B8002A3FDF /* CastDetailsModel.swift in Sources */,
 				4725F4C3288EBF80008AB6B5 /* MovieListViewController.swift in Sources */,
 				47D59BB128926C84006DC9E8 /* CastModel.swift in Sources */,
-				473889AB28A3D01300B73342 /* TabBar+Extension.swift in Sources */,
 				4725F4C5288EBF88008AB6B5 /* DetailsViewController.swift in Sources */,
 				477A3E9028928249002A3FDF /* CastResults.swift in Sources */,
 				4725F4E5288FDC84008AB6B5 /* String+Extension.swift in Sources */,
