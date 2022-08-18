@@ -16,3 +16,6 @@ The following tools were used in this project:
 - [TMDB API](https://www.themoviedb.org)
 
 ## Video ##
+
+![gif](https://user-images.githubusercontent.com/89488125/185394976-146c7db9-a3ff-40a4-b893-34bb431acc70.gif)
+
